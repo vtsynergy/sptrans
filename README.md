@@ -22,8 +22,13 @@ June 2016.
 }
 
 ## Usage:
-You can make changes to the Makefile accordingly. Especially, you need to check the correct 
-MKL installation path if you want to compare MKL results. After compilation, run the executable as (for example, there are 24 threads):
+You can make changes to the Makefile accordingly. Especially, you need to enable -DMKL and provide the correct 
+MKL installation path if you want to compare MKL results. Examples of setting MKL path are given in the Makefile.
+For different vector ISAs, please change the parameter ISA when executing the make command accordingly. Supported ISAs include avx2, mic, avx. 
+```
+$ make ISA=avx2
+```
+After compilation, run the executable as (for example, there are 24 threads):
 ```
 $ OMP_NUM_THREADS=24 ./sptrans.out matrixname.mtx
 ```
