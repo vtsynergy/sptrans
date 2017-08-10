@@ -24,7 +24,7 @@ June 2016.
 ## Usage:
 You can make changes to the Makefile accordingly. Especially, you need to enable -DMKL and provide the correct 
 MKL installation path if you want to compare MKL results. Examples of setting MKL path are given in the Makefile.
-For different vector ISAs, please change the parameter ISA when executing the make command accordingly. Supported ISAs include avx2 (default), mic, avx. The following command compiles the codes using avx2 ISA.
+For different vector ISAs, please change the parameter ISA when executing the make command accordingly. Supported ISAs include **avx2** (default), **mic**, **avx**. The following command compiles the codes using **avx2** ISA.
 ```
 $ make ISA=avx2
 ```
