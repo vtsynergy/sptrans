@@ -28,7 +28,7 @@ For different vector ISAs, please change the parameter ISA when executing the ma
 ```
 $ make ISA=avx2
 ```
-After compilation, run the executable as (for example, there are 24 threads):
+After compilation, run the executable as: (for example, there are 24 threads)
 ```
 $ OMP_NUM_THREADS=24 ./sptrans.out matrixname.mtx
 ```
